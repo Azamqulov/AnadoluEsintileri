@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anadolu Esintileri | Türkiye'nin Gizli Hazineleri</title>
+    <meta name="description" content="Türkiye'nin keşfedilmemiş köşelerini, yerel kültürünü ve eşsiz deneyimlerini keşfedin. Sıra dışı rotalar, otantik deneyimler ve unutulmaz anılar.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <svg class="loader-logo" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="loader-path" d="M50 5C25.1472 5 5 25.1472 5 50C5 74.8528 25.1472 95 50 95C74.8528 95 95 74.8528 95 50C95 25.1472 74.8528 5 50 5Z" stroke="#FF6B6B" stroke-width="2"/>
+                <path class="loader-path" d="M50 20C33.4315 20 20 33.4315 20 50C20 66.5685 33.4315 80 50 80C66.5685 80 80 66.5685 80 50C80 33.4315 66.5685 20 50 20Z" stroke="#FF6B6B" stroke-width="2"/>
+                <path class="loader-path" d="M50 35C41.7157 35 35 41.7157 35 50C35 58.2843 41.7157 65 50 65C58.2843 65 65 58.2843 65 50C65 41.7157 58.2843 35 50 35Z" stroke="#FF6B6B" stroke-width="2"/>
+            </svg>
+            <div class="loader-text">
+                <span>A</span>
+                <span>N</span>
+                <span>A</span>
+                <span>D</span>
+                <span>O</span>
+                <span>L</span>
+                <span>U</span>
+            </div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#" class="logo-link">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 5C25.1472 5 5 25.1472 5 50C5 74.8528 25.1472 95 50 95C74.8528 95 95 74.8528 95 50C95 25.1472 74.8528 5 50 5Z" stroke="#FF6B6B" stroke-width="2"/>
+                        <path d="M50 20C33.4315 20 20 33.4315 20 50C20 66.5685 33.4315 80 50 80C66.5685 80 80 66.5685 80 50C80 33.4315 66.5685 20 50 20Z" stroke="#FF6B6B" stroke-width="2"/>
+                        <path d="M50 35C41.7157 35 35 41.7157 35 50C35 58.2843 41.7157 65 50 65C58.2843 65 65 58.2843 65 50C65 41.7157 58.2843 35 50 35Z" stroke="#FF6B6B" stroke-width="2"/>
+                    </svg>
+                    <span>Anadolu<em>Esintileri</em></span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="#destinations" class="nav-link">Destinasyonlar</a></li>
+                    <li class="nav-item"><a href="#experiences" class="nav-link">Deneyimler</a></li>
+                    <li class="nav-item"><a href="#stories" class="nav-link">Hikayeler</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Galeri</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <div class="language-toggle">
+                    <span class="current-lang">TR</span>
+                    <div class="lang-options">
+                        <a href="#" class="lang-option">EN</a>
+                        <a href="#" class="lang-option">DE</a>
+                        <a href="#" class="lang-option">FR</a>
+                    </div>
+                </div>
+                <button class="menu-toggle">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <a href="#" class="logo-link">
+                        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5C25.1472 5 5 25.1472 5 50C5 74.8528 25.1472 95 50 95C74.8528 95 95 74.8528 95 50C95 25.1472 74.8528 5 50 5Z" stroke="#FF6B6B" stroke-width="2"/>
+                            <path d="M50 20C33.4315 20 20 33.4315 20 50C20 66.5685 33.4315 80 50 80C66.5685 80 80 66.5685 80 50C80 33.4315 66.5685 20 50 20Z" stroke="#FF6B6B" stroke-width="2"/>
+                            <path d="M50 35C41.7157 35 35 41.7157 35 50C35 58.2843 41.7157 65 50 65C58.2843 65 65 58.2843 65 50C65 41.7157 58.2843 35 50 35Z" stroke="#FF6B6B" stroke-width="2"/>
+                        </svg>
+                        <span>Anadolu<em>Esintileri</em></span>
+                    </a>
+                </div>
+                <button class="mobile-close">
+                    <span class="close-line"></span>
+                    <span class="close-line"></span>
+                </button>
+            </div>
+            <div class="mobile-menu-content">
+                <ul class="mobile-menu-links">
+                    <li class="mobile-menu-item"><a href="#home" class="mobile-menu-link">Ana Sayfa</a></li>
+                    <li class="mobile-menu-item"><a href="#destinations" class="mobile-menu-link">Destinasyonlar</a></li>
+                    <li class="mobile-menu-item"><a href="#experiences" class="mobile-menu-link">Deneyimler</a></li>
+                    <li class="mobile-menu-item"><a href="#stories" class="mobile-menu-link">Hikayeler</a></li>
+                    <li class="mobile-menu-item"><a href="#gallery" class="mobile-menu-link">Galeri</a></li>
+                    <li class="mobile-menu-item"><a href="#contact" class="mobile-menu-link">İletişim</a></li>
+                </ul>
+                <div class="mobile-menu-footer">
+                    <div class="mobile-languages">
+                        <a href="#" class="mobile-lang active">TR</a>
+                        <a href="#" class="mobile-lang">EN</a>
+                        <a href="#" class="mobile-lang">DE</a>
+                        <a href="#" class="mobile-lang">FR</a>
+                    </div>
+                    <div class="mobile-socials">
+                        <a href="#" class="mobile-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="mobile-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="mobile-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="mobile-social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1668858865415-5a6a877c43eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Keşfedilmemiş</span>
+                    <span class="title-line">Türkiye'yi</span>
+                    <span class="title-line">Keşfedin</span>
+                </h1>
+                <p class="hero-description">Sıra dışı rotalar, otantik deneyimler ve unutulmaz anılar için yolculuğa çıkın</p>
+                <div class="hero-buttons">
+                    <a href="#destinations" class="btn btn-primary">Keşfet</a>
+                    <a href="#video-modal" class="btn btn-video" data-modal="video">
+                        <span class="video-icon">
+                            <i class="fas fa-play"></i>
+                        </span>
+                        <span>Tanıtım Filmi</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <div class="scroll-arrows">
+                        <span class="scroll-arrow"></span>
+                        <span class="scroll-arrow"></span>
+                    </div>
+                </div>
+                <span class="scroll-text">Aşağı Kaydır</span>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Destinasyonlar</div>
+                <h2 class="section-title">Eşsiz <span class="highlight">Yerler</span></h2>
+                <p class="section-description">Türkiye'nin en etkileyici ve az bilinen destinasyonlarını keşfedin. Her biri kendine özgü kültürü, doğası ve tarihi ile sizi bekliyor.</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card" data-category="nature">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kapadokya">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Kapadokya</h3>
+                        <p class="destination-description">Masalsı peri bacaları ve sıcak hava balonlarıyla büyüleyici bir deneyim</p>
+                        <div class="destination-meta">
+                            <span class="destination-location"><i class="fas fa-map-marker-alt"></i> Nevşehir</span>
+                            <a href="#" class="destination-link">Keşfet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="destination-hover">
+                        <div class="hover-content">
+                            <div class="hover-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#ffffff"/>
+                                </svg>
+                            </div>
+                            <h3 class="hover-title">Kapadokya</h3>
+                            <p class="hover-description">Volkanik tüflerin erozyonuyla oluşan peri bacaları, yeraltı şehirleri ve sıcak hava balonlarıyla dünyaca ünlü bir bölge.</p>
+                            <ul class="hover-features">
+                                <li>Sıcak Hava Balonu Turları</li>
+                                <li>Yeraltı Şehirleri</li>
+                                <li>Açık Hava Müzeleri</li>
+                                <li>Vadi Yürüyüşleri</li>
+                            </ul>
+                            <a href="#" class="btn btn-sm">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-category="historical">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1544804529-2909bc52578f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Efes">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Efes</h3>
+                        <p class="destination-description">Antik dünyanın en iyi korunmuş şehirlerinden biri</p>
+                        <div class="destination-meta">
+                            <span class="destination-location"><i class="fas fa-map-marker-alt"></i> İzmir</span>
+                            <a href="#" class="destination-link">Keşfet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="destination-hover">
+                        <div class="hover-content">
+                            <div class="hover-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#ffffff"/>
+                                </svg>
+                            </div>
+                            <h3 class="hover-title">Efes</h3>
+                            <p class="hover-description">Roma İmparatorluğu'nun en önemli şehirlerinden biri olan Efes, muhteşem korunmuş yapılarıyla tarih tutkunlarını büyülüyor.</p>
+                            <ul class="hover-features">
+                                <li>Celsus Kütüphanesi</li>
+                                <li>Büyük Tiyatro</li>
+                                <li>Hadrian Tapınağı</li>
+                                <li>Meryem Ana Evi</li>
+                            </ul>
+                            <a href="#" class="btn btn-sm">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-category="coastal">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1623621534850-d325a1980c7e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ölüdeniz">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Ölüdeniz</h3>
+                        <p class="destination-description">Turkuaz suları ve eşsiz kumsalıyla cennet köşesi</p>
+                        <div class="destination-meta">
+                            <span class="destination-location"><i class="fas fa-map-marker-alt"></i> Muğla</span>
+                            <a href="#" class="destination-link">Keşfet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="destination-hover">
+                        <div class="hover-content">
+                            <div class="hover-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#ffffff"/>
+                                </svg>
+                            </div>
+                            <h3 class="hover-title">Ölüdeniz</h3>
+                            <p class="hover-description">Dünyanın en güzel plajlarından biri olarak kabul edilen Ölüdeniz, turkuaz suları ve beyaz kumsalıyla büyüleyici bir doğa harikası.</p>
+                            <ul class="hover-features">
+                                <li>Yamaç Paraşütü</li>
+                                <li>Mavi Lagün</li>
+                                <li>Tekne Turları</li>
+                                <li>Kelebekler Vadisi</li>
+                            </ul>
+                            <a href="#" class="btn btn-sm">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-category="cultural">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1650268002017-15132a509d08?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D" alt="Mardin">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Mardin</h3>
+                        <p class="destination-description">Taş evleri ve çok kültürlü yapısıyla zamanda yolculuk</p>
+                        <div class="destination-meta">
+                            <span class="destination-location"><i class="fas fa-map-marker-alt"></i> Mardin</span>
+                            <a href="#" class="destination-link">Keşfet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="destination-hover">
+                        <div class="hover-content">
+                            <div class="hover-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#ffffff"/>
+                                </svg>
+                            </div>
+                            <h3 class="hover-title">Mardin</h3>
+                            <p class="hover-description">Mezopotamya'ya bakan teraslarıyla, bal rengi taş evleriyle ve farklı dinlerin bir arada yaşadığı zengin kültürel mirasıyla büyüleyici bir şehir.</p>
+                            <ul class="hover-features">
+                                <li>Tarihi Taş Evler</li>
+                                <li>Deyrulzafaran Manastırı</li>
+                                <li>Geleneksel El Sanatları</li>
+                                <li>Mezopotamya Ovası Manzarası</li>
+                            </ul>
+                            <a href="#" class="btn btn-sm">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="destinations-filter">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="nature">Doğa</button>
+                <button class="filter-btn" data-filter="historical">Tarih</button>
+                <button class="filter-btn" data-filter="coastal">Sahil</button>
+                <button class="filter-btn" data-filter="cultural">Kültür</button>
+            </div>
+            <div class="destinations-more">
+                <a href="#" class="btn btn-outline">Tüm Destinasyonlar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Deneyimler</div>
+                <h2 class="section-title">Unutulmaz <span class="highlight">Anlar</span></h2>
+                <p class="section-description">Türkiye'de yaşayabileceğiniz benzersiz deneyimler ile sıradan bir tatilden çok daha fazlasını yaşayın.</p>
+            </div>
+            <div class="experiences-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="experience-slide">
+                            <div class="experience-card">
+                                <div class="experience-image">
+                                    <img src="https://images.unsplash.com/photo-1704739829089-54d5194a95f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D" alt="Balon Turu">
+                                    <div class="experience-overlay"></div>
+                                </div>
+                                <div class="experience-content">
+                                    <div class="experience-icon">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.5 2C10.84 2 9.5 5.33 9.5 9.5C9.5 13.67 10.84 17 12.5 17C14.16 17 15.5 13.67 15.5 9.5C15.5 5.33 14.16 2 12.5 2ZM12.5 15C11.9 15 11 12.42 11 9.5C11 6.58 11.9 4 12.5 4C13.1 4 14 6.58 14 9.5C14 12.42 13.1 15 12.5 15ZM3 7.6C3 11.5 5.5 14 8 14C8.35 14 8.69 13.93 9 13.82V16.34C8.69 16.45 8.35 16.5 8 16.5C4.41 16.5 1 13.09 1 7.6C1 5.21 1.64 3 3.65 3C4.55 3 5.31 3.26 5.9 3.74C5.34 5.31 5 7.36 5 9.5C5 10.39 5.08 11.25 5.22 12.05C4.53 12.76 4 13.43 4 14.5C4 15.88 5.12 17 6.5 17C7.12 17 7.7 16.75 8.12 16.34C8.58 16.05 8.93 15.64 9.16 15.16C9.59 15.47 10.04 15.68 10.5 15.81V18.89C10.5 19.5 10.99 20 11.61 20C12.22 20 12.72 19.5 12.72 18.89V15.85C12.82 15.85 12.91 15.85 13 15.85C15.5 15.85 18 13.35 18 9.45C18 7.07 17.36 4.85 15.35 4.85C14.45 4.85 13.69 5.11 13.1 5.59C13.66 7.16 14 9.21 14 11.35C14 12.24 13.92 13.1 13.78 13.9C13.33 14.21 12.88 14.42 12.42 14.55V11.45C12.42 10.84 11.93 10.34 11.31 10.34C10.7 10.34 10.2 10.84 10.2 11.45V14.53C9.75 14.4 9.3 14.18 8.88 13.88C8.45 13.57 8.1 13.16 7.87 12.68C8.3 11.86 8.5 10.7 8.5 9.5C8.5 7.36 8.16 5.31 7.6 3.74C7.01 3.26 6.25 3 5.35 3C3.34 3 2.7 5.21 2.7 7.6H3Z" fill="#FF6B6B"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="experience-title">Kapadokya'da Balon Turu</h3>
+                                    <p class="experience-description">Güneşin ilk ışıklarıyla peri bacaları üzerinde unutulmaz bir balon yolculuğu</p>
+                                    <div class="experience-meta">
+                                        <span class="experience-duration"><i class="far fa-clock"></i> 3 Saat</span>
+                                        <span class="experience-price"><i class="fas fa-tag"></i> €150'dan başlayan</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm">Detaylar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-slide">
+                            <div class="experience-card">
+                                <div class="experience-image">
+                                    <img src="https://images.unsplash.com/photo-1623439844752-524658b16ce6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Türk Hamamı">
+                                    <div class="experience-overlay"></div>
+                                </div>
+                                <div class="experience-content">
+                                    <div class="experience-icon">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 3C7  xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3ZM15.5 14C14.12 14 13 12.88 13 11.5C13 10.12 14.12 9 15.5 9C16.88 9 18 10.12 18 11.5C18 12.88 16.88 14 15.5 14ZM8.5 14C7.12 14 6 12.88 6 11.5C6 10.12 7.12 9 8.5 9C9.88 9 11 10.12 11 11.5C11 12.88 9.88 14 8.5 14ZM12 17.5C10.27 17.5 8.73 16.67 7.89 15.35C8.21 14.29 9.76 13.5 12 13.5C14.24 13.5 15.79 14.29 16.11 15.35C15.27 16.67 13.73 17.5 12 17.5Z" fill="#FF6B6B"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="experience-title">Geleneksel Türk Hamamı</h3>
+                                    <p class="experience-description">Yüzyıllık geleneksel hamam ritüelini deneyimleyin ve tam bir arınma yaşayın</p>
+                                    <div class="experience-meta">
+                                        <span class="experience-duration"><i class="far fa-clock"></i> 2 Saat</span>
+                                        <span class="experience-price"><i class="fas fa-tag"></i> €50'dan başlayan</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm">Detaylar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-slide">
+                            <div class="experience-card">
+                                <div class="experience-image">
+                                    <img src="https://images.unsplash.com/photo-1636044466540-125eb1a5ae3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D" alt="Yemek Atölyesi">
+                                    <div class="experience-overlay"></div>
+                                </div>
+                                <div class="experience-content">
+                                    <div class="experience-icon">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.1 13.34L3.91 9.16C2.35 7.59 2.35 5.06 3.91 3.5C5.48 1.94 8.01 1.94 9.57 3.5L13.75 7.68L8.1 13.34ZM14.93 13.34L20.5 19.5L19 21L13.41 14.82L14.93 13.34ZM18.59 10.52L13.75 5.68L14.93 4.5L19.5 9.68L18.59 10.52ZM7 13.5L8.5 12L13.5 17L12 18.5L7 13.5Z" fill="#FF6B6B"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="experience-title">Türk Mutfağı Atölyesi</h3>
+                                    <p class="experience-description">Yerel şeflerden Türk mutfağının sırlarını öğrenin ve kendi yemeğinizi pişirin</p>
+                                    <div class="experience-meta">
+                                        <span class="experience-duration"><i class="far fa-clock"></i> 4 Saat</span>
+                                        <span class="experience-price"><i class="fas fa-tag"></i> €75'dan başlayan</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm">Detaylar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-slide">
+                            <div class="experience-card">
+                                <div class="experience-image">
+                                    <img src="https://images.unsplash.com/photo-1665273073537-8102b0f715ad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tekne Turu">
+                                    <div class="experience-overlay"></div>
+                                </div>
+                                <div class="experience-content">
+                                    <div class="experience-icon">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 21C18.61 21 17.22 20.53 16 19.67C13.56 21.38 10.44 21.38 8 19.67C6.78 20.53 5.39 21 4 21H2V19H4C5.37 19 6.74 18.35 7.68 17.21L8.76 15.93L7.68 14.66C6.74 13.52 5.37 12.87 4 12.87H2V10.87H4C5.39 10.87 6.78 11.34 8 12.2C10.44 10.5 13.56 10.5 16 12.2C17.22 11.34 18.61 10.87 20 10.87H22V12.87H20C18.63 12.87 17.26 13.52 16.32 14.66L15.24 15.93L16.32 17.21C17.26 18.35 18.63 19 20 19H22V21H20ZM6 3H18V7H16V5H8V7H6V3Z" fill="#FF6B6B"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="experience-title">Mavi Yolculuk</h3>
+                                    <p class="experience-description">Geleneksel gulet tekneleriyle Ege ve Akdeniz'in gizli koylarını keşfedin</p>
+                                    <div class="experience-meta">
+                                        <span class="experience-duration"><i class="far fa-clock"></i> 3-7 Gün</span>
+                                        <span class="experience-price"><i class="fas fa-tag"></i> €500'dan başlayan</span>
+                                    </div>
+                                    <a href="#" class="btn btn-sm">Detaylar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-arrow prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="slider-dot active"></span>
+                        <span class="slider-dot"></span>
+                        <span class="slider-dot"></span>
+                        <span class="slider-dot"></span>
+                    </div>
+                    <button class="slider-arrow next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.59 16.59L10 18L16 12L10 6L8.59 7.41L13.17 12L8.59 16.59Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="experiences-pattern">
+            <div class="pattern-circle"></div>
+            <div class="pattern-line"></div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" class="stories-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Hikayeler</div>
+                <h2 class="section-title">Yolculuk <span class="highlight">Hikayeleri</span></h2>
+                <p class="section-description">Türkiye'de yaşanmış gerçek deneyimler ve ilham verici seyahat hikayeleri.</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1674501495434-b780fd982d68?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" alt="Karadeniz Yaylaları">
+                        <div class="story-overlay"></div>
+                        <div class="story-category">Doğa</div>
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-date">15 Haziran 2023</span>
+                            <span class="story-author">Ahmet Yılmaz</span>
+                        </div>
+                        <h3 class="story-title">Karadeniz Yaylalarında Bir Hafta</h3>
+                        <p class="story-excerpt">Yeşilin bin bir tonunu barındıran Karadeniz yaylalarında geçirdiğim bir haftanın unutulmaz anıları...</p>
+                        <a href="#" class="story-link">Devamını Oku <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1682270976434-78ebce24c1f4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="İstanbul Sokakları">
+                        <div class="story-overlay"></div>
+                        <div class="story-category">Kültür</div>
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-date">3 Mayıs 2023</span>
+                            <span class="story-author">Zeynep Kaya</span>
+                        </div>
+                        <h3 class="story-title">İstanbul'un Arka Sokaklarında Kaybolmak</h3>
+                        <p class="story-excerpt">Turistik rotaların dışına çıkıp, İstanbul'un gerçek ruhunu keşfettiğim bir günün hikayesi...</p>
+                        <a href="#" class="story-link">Devamını Oku <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1732297778791-09409b753d79?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Likya Yolu">
+                        <div class="story-overlay"></div>
+                        <div class="story-category">Macera</div>
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-date">22 Nisan 2023</span>
+                            <span class="story-author">Mehmet Demir</span>
+                        </div>
+                        <h3 class="story-title">Likya Yolu'nda 10 Gün</h3>
+                        <p class="story-excerpt">Antik Likya medeniyetinin izinde, muhteşem manzaralar eşliğinde 10 günlük yürüyüş maceram...</p>
+                        <a href="#" class="story-link">Devamını Oku <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="stories-more">
+                <a href="#" class="btn btn-outline">Tüm Hikayeler</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Galeri</div>
+                <h2 class="section-title">Görsel <span class="highlight">Keşif</span></h2>
+                <p class="section-description">Türkiye'nin en etkileyici manzaraları, tarihi yerleri ve kültürel anlarından kareler.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1690484289782-e0bed9cfc362?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kapadokya Manzarası">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Kapadokya Manzarası</h3>
+                            <p>Nevşehir, Türkiye</p>
+                        </div>
+                        <a href="https://images.unsplash.com/photo-1690484289556-55b9ebaf20aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="gallery-zoom" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural">
+                    <img src="https://plus.unsplash.com/premium_photo-1734430859590-8ca179fd4e16?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Türk Çay Kültürü">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Türk Çay Kültürü</h3>
+                            <p>İstanbul, Türkiye</p>
+                        </div>
+                        <a href="/placeholder.svg?height=1200&width=1600" class="gallery-zoom" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="historical">
+                    <img src="https://plus.unsplash.com/premium_photo-1731264250071-664a753048f5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ayasofya">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Ayasofya</h3>
+                            <p>İstanbul, Türkiye</p>
+                        </div>
+                        <a href="https://plus.unsplash.com/premium_photo-1732380829316-5862fa23cfab?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="gallery-zoom" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1635885102331-82b93cf4c3e1?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pamukkale Travertenleri">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Pamukkale Travertenleri</h3>
+                            <p>Denizli, Türkiye</p>
+                        </div>
+                        <a href="https://images.unsplash.com/photo-1689102802795-6ae897e88c7d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="gallery-zoom" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cultural">
+                    <img src="https://plus.unsplash.com/premium_photo-1739452120315-2c6da6bd9277?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Türk Kahvesi">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Türk Kahvesi</h3>
+                            <p>Türkiye</p>
+                        </div>
+                        <a href="https://images.unsplash.com/photo-1609370850684-aec46c8a285f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="gallery-zoom" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="historical">
+                    <img src="https://images.unsplash.com/photo-1576357079315-cf0d004de035?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Efes Antik Kenti">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Efes Antik Kenti</h3>
+                            <p>İzmir, Türkiye</p>
+                        </div>
+                        <a href="/placeholder.svg?height=1200&width=1600" class="gallery-zoom" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="landscape">Manzara</button>
+                <button class="filter-btn" data-filter="cultural">Kültürel</button>
+                <button class="filter-btn" data-filter="historical">Tarihi</button>
+            </div>
+            <div class="gallery-more">
+                <a href="#" class="btn btn-outline">Tüm Fotoğraflar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <div class="section-tag">İletişim</div>
+                        <h2 class="section-title">Bize <span class="highlight">Ulaşın</span></h2>
+                        <p class="section-description">Sorularınız, önerileriniz veya rezervasyon talepleriniz için bizimle iletişime geçin.</p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Adres</h3>
+                                <p>Bağdat Caddesi No:123, Kadıköy<br>İstanbul, Türkiye</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Telefon</h3>
+                                <p>+90 (212) 456 7890</p>
+                                <p>+90 (532) 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>E-posta</h3>
+                                <p>info@anadoluesintileri.com</p>
+                                <p>rezervasyon@anadoluesintileri.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Seçiniz</option>
+                                <option value="reservation">Rezervasyon</option>
+                                <option value="information">Bilgi Talebi</option>
+                                <option value="feedback">Geri Bildirim</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Kişisel verilerimin işlenmesine izin veriyorum. <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>'nı okudum ve kabul ediyorum.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact-pattern">
+            <div class="pattern-dot"></div>
+            <div class="pattern-dot"></div>
+            <div class="pattern-dot"></div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="section-container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <h2>Bültenimize Abone Olun</h2>
+                    <p>Türkiye'nin gizli kalmış köşeleri, özel seyahat önerileri ve fırsatlar için bültenimize abone olun.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresiniz" required>
+                    <button type="submit" class="btn btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#" class="logo-link">
+                        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5C25.1472 5 5 25.1472 5 50C5 74.8528 25.1472 95 50 95C74.8528 95 95 74.8528 95 50C95 25.1472 74.8528 5 50 5Z" stroke="#FF6B6B" stroke-width="2"/>
+                            <path d="M50 20C33.4315 20 20 33.4315 20 50C20 66.5685 33.4315 80 50 80C66.5685 80 80 66.5685 80 50C80 33.4315 66.5685 20 50 20Z" stroke="#FF6B6B" stroke-width="2"/>
+                            <path d="M50 35C41.7157 35 35 41.7157 35 50C35 58.2843 41.7157 65 50 65C58.2843 65 65 58.2843 65 50C65 41.7157 58.2843 35 50 35Z" stroke="#FF6B6B" stroke-width="2"/>
+                        </svg>
+                        <span>Anadolu<em>Esintileri</em></span>
+                    </a>
+                    <p>Türkiye'nin keşfedilmemiş köşelerini, yerel kültürünü ve eşsiz deneyimlerini keşfedin. Sıra dışı rotalar, otantik deneyimler ve unutulmaz anılar için yolculuğa çıkın.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Keşfet</h3>
+                        <ul>
+                            <li><a href="#destinations">Destinasyonlar</a></li>
+                            <li><a href="#experiences">Deneyimler</a></li>
+                            <li><a href="#stories">Hikayeler</a></li>
+                            <li><a href="#gallery">Galeri</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Hakkımızda</h3>
+                        <ul>
+                            <li><a href="#">Şirketimiz</a></li>
+                            <li><a href="#">Ekibimiz</a></li>
+                            <li><a href="#">Kariyer</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Destek</h3>
+                        <ul>
+                            <li><a href="#">SSS</a></li>
+                            <li><a href="#">İletişim</a></li>
+                            <li><a href="#">Rezervasyon</a></li>
+                            <li><a href="#">Ödeme</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Yasal</h3>
+                        <ul>
+                            <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                            <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+                            <li><a href="#">Kullanım Koşulları</a></li>
+                            <li><a href="#">İptal Politikası</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Anadolu Esintileri. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="footer-payment">
+                    <span>Güvenli Ödeme:</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <h3>Çerez Kullanımı</h3>
+            <p>Bu web sitesi, size en iyi deneyimi sunmak için çerezleri kullanmaktadır. Sitemizi kullanmaya devam ederek, çerez kullanımımızı kabul etmiş olursunuz.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Kabul Et</button>
+                <button id="rejectCookies" class="btn btn-outline">Reddet</button>
+                <a href="cerez-politikasi.html" class="cookie-link">Daha Fazla Bilgi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal" id="video-modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <span class="close-line"></span>
+                <span class="close-line"></span>
+            </button>
+            <div class="modal-body">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">
+                <span class="close-line"></span>
+                <span class="close-line"></span>
+            </button>
+            <div class="lightbox-body">
+                <img src="/placeholder.svg" alt="" class="lightbox-image">
+            </div>
+            <div class="lightbox-controls">
+                <button class="lightbox-arrow prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button class="lightbox-arrow next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.59 16.59L10 18L16 12L10 6L8.59 7.41L13.17 12L8.59 16.59Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
